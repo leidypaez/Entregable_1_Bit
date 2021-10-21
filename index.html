@@ -1,354 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-  <!-- MDB -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- wow -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="animate.css" />
 
-  <!-- wow -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="animate.css" />
+    <!-- css's -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+    <title>ARESoft</title>
+  </head>
 
-  <!-- css's -->
-  <link rel="stylesheet" href="styles.css" />
-  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
-  <title>ARESoft</title>
-</head>
+  <body>
+    <header class="header">
+      <img class="logo" src="img/game-over.png" alt="#" width="200" />
+      <nav>
+        <ul>
+          <li>Clasicos</li>
+          <li>Shooter</li>
+          <li>Aventura</li>
+          <li>Super Game</li>
+          <li>Sobre Nosotros</li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark w-100 t-0 pt-3 wow animate__bounce">
+    <!-- SECTION DE LA PRIMERA PANTALLA -->
+    <section class="prueba">
+      <!-- Carousel wrapper -->
+      <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+        </div>
 
-      <div class="container">
-        <!-- Navbar brand -->
-        <a class="navbar-brand me-2" href="./index.html">
-          <i class="fab fa-squarespace fa-2x logo"></i>
-        </a>
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <img src="img/halo-5.jpg" class="d-block w-100" alt="..."/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Halo 5</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
 
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarBtns"
-          aria-controls="navbarBtns" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
+          <!-- Single item -->
+          <div class="carousel-item">
+            <img src="img/crash_bandicoot.jpg" class="d-block w-100" alt="..."/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Crash Bandicoot</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <img src="img/mario kart.jpg" class="d-block w-100" alt="..."/>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mario Kart</h5>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-
-        <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarBtns">
-          <ul class="navbar-nav text-lowercase fw-bold">
-            <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </nav>
+      <!-- Carousel wrapper -->
+    </section>
 
-    <!-- Background image -->
-    <div class="p-5 text-center bg-image bg-image-0">
-      <div class="mask">
-        <div class="col d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-2 fw-bold text-uppercase wow animate__heartBeat animate__infinite	infinite">HADES SOFT</h1>
-            <h6 class="mb-3 fw-normal text-lowercase">software factory</h6>
-            <!-- <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a> -->
+
+
+
+    <section id="about" class="py-5">
+      <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center">
+        Datos curiosos
+      </h2>
+
+      <div class="container-fluid g-0">
+        <div class="row row-cols-1 row-cols-md-2 g-0">
+          <div class="col order-md-first d-flex align-items-center">
+            <div class="p-5 lh-sm fw-normal">
+              <h3 class="mb-2 text-lowercase fw-bold text-center">
+                Jack el destripador
+              </h3>
+              <p>
+                El primer videojuego en ser clasificado como “para mayores de 18 años” 
+                fue uno sobre Jack, el Destripador en 1987. El motivo: sus violentas 
+                imágenes.
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-  </header>
-
-  <section id="about" class="py-5">
-    <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center">about us</h2>
-
-    <div class="container-fluid g-0">
-
-      <div class="row row-cols-1 row-cols-md-2 g-0">
-
-        <div class="col order-md-first d-flex align-items-center">
-          <div class="p-5 lh-sm fw-normal">
-            <h3 class="mb-2 text-lowercase fw-bold text-center">Our History</h3>
-            <p>Four friends in a bar. That’s how our story began back in 2003. They shared a common dream that we still
-              pursue: to become the best company in delivering profound transformations for organizations, while
-              generating global career opportunities for IT professionals throughout the world.</p>
+          <div class="col order-first wow animate__bounceInUp">
+            <img src="img/jack-the-ripper.jpg" class="img-fluid wow animate__bounceInUp"/>
           </div>
         </div>
 
-        <div class="col order-first wow animate__bounceInUp">
-          <img
-            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/office-zoom-background-design-template-d7482e68ffbbeea9dd7af0050b896fb2_screen.jpg?ts=1610722593"
-            alt="" class="img-fluid wow animate__bounceInUp">
+        <div class="row row-cols-1 row-cols-md-2 g-0">
+          <div class="col">
+            <img src="img/spacewar.png" alt="" class="img-fluid wow animate__bounceInUp"/>
+          </div>
+
+          <div class="col d-flex align-items-center">
+            <div class="p-5 lh-sm fw-normal">
+              <h3 class="mb-2 text-lowercase fw-bold text-center">
+              Space War
+              </h3>
+              <p>
+                Spacewar!, creado en 1961, fue el primer 
+                videojuego de disparos de la historia y se realizó 
+                en apenas 200 horas.
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="row row-cols-1 row-cols-md-2 g-0">
+          <div class="col order-md-first d-flex align-items-center">
+            <div class="p-5 lh-sm fw-normal">
+              <h3 class="mb-2 text-lowercase fw-bold text-center">
+                Call Of Duty Modern Warfare
+              </h3>
+              <p>
+                Call of Duty: Moder Warfare 2 es el videojuego que ha logrado 
+                la mayor recaudación por ventas de un solo día. Consiguió 410 millones de dólares 
+                en su primer día de salida al mercado. En segundo lugar está Grand Theft 
+                Auto con 300 millones de dólares.
+              </p>
+            </div>
+          </div>
 
+          <div class="col order-first wow animate__bounceInUp">
+            <img src="img/call-of-duty.jpg" class="img-fluid wow animate__bounceInUp"/>
+          </div>
+        </div>
       </div>
-
       <div class="row row-cols-1 row-cols-md-2 g-0">
-
         <div class="col">
-          <img src="https://wallpaperaccess.com/full/1338362.png" alt="" class="img-fluid wow animate__bounceInUp">
+          <img src="img/mario-donkey.jpg" alt="" class="img-fluid wow animate__bounceInUp"/>
         </div>
 
         <div class="col d-flex align-items-center">
           <div class="p-5 lh-sm fw-normal">
-            <h3 class="mb-2 text-lowercase fw-bold text-center">We Are Hares-Soft</h3>
-            <p>The digital and the cognitive revolutions are affecting how companies connect with users and employees.
-              Companies are simultaneously looking to boost their consumer experiences and to transform themselves
-              internally. Globant is a pure play on the digital and cognitive space.</p>
+            <h3 class="mb-2 text-lowercase fw-bold text-center">
+            Donkey Kong
+            </h3>
+            <p>
+              Mario Bros tuvo su primer empleo en 
+              Donkey Kong y fue de carpintero, no de fontanero. 
+              Además, se llamaba Jumpman.
+            </p>
           </div>
         </div>
-
       </div>
+    </section>
 
+    <div class="container-fluid parallax bg-image bg-image-1">
+      <div class="mask"></div>
     </div>
-  </section>
 
-  <div class="container-fluid parallax bg-image bg-image-1">
-    <div class="mask"></div>
-  </div>
-
-  <section id="services" class="py-5">
-    <div class="container">
-
-      <div class="row">
-        <h2 class="mb-4 text-uppercase fw-bold fs-2 text text-center">our services</h2>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-        <div class="col mb-3">
-          <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-2 text-lowercase fw-normal">cybersecurity</h5>
-              <i class="fas fa-shield-alt fa-5x"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-3">
-          <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-2 text-lowercase fw-normal">Gaming</h5>
-              <i class="fas fa-gamepad fa-5x"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-3">
-          <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-2 text-lowercase fw-normal">Product Strategy</h5>
-              <i class="fab fa-connectdevelop fa-5x"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-3">
-          <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-2 text-lowercase fw-normal">custom development</h5>
-              <i class="fas fa-terminal fa-5x"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-3">
-          <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-2 text-lowercase fw-normal">Outsourcing</h5>
-              <i class="fas fa-headset fa-5x"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="col mb-3">
-          <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-2 text-lowercase fw-normal">Cultural Hacking</h5>
-              <i class="fab fa-redhat fa-5x"></i>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <div class="container-fluid parallax bg-image bg-image-2"></div>
-
-  <section class="py-5 px-3 w-100" id="events">
-    <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center">events</h2>
-    
-    <div class="d-lg-flex justify-content-lg-center align-items-lg-center">
-      <div class="accordion px-2 w-100 px-md-5" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-mdb-toggle="collapse"
-              data-mdb-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne">
-              Event Name #1
-            </button>
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="mb-4 text-uppercase fw-bold fs-2 text text-center">
+            our services
           </h2>
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default,
-              until the collapse plugin adds the appropriate classes that we use to style each
-              element. These classes control the overall appearance, as well as the showing and
-              hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-              our default variables. It's also worth noting that just about any HTML can go within
-              the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col mb-3">
+            <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-2 text-lowercase fw-normal">
+                  cybersecurity
+                </h5>
+                <i class="fas fa-shield-alt fa-5x"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-2 text-lowercase fw-normal">Gaming</h5>
+                <i class="fas fa-gamepad fa-5x"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-2 text-lowercase fw-normal">
+                  Product Strategy
+                </h5>
+                <i class="fab fa-connectdevelop fa-5x"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-2 text-lowercase fw-normal">
+                  custom development
+                </h5>
+                <i class="fas fa-terminal fa-5x"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-2 text-lowercase fw-normal">
+                  Outsourcing
+                </h5>
+                <i class="fas fa-headset fa-5x"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <div class="card my-2 mx-auto py-2 wow animate__bounceInUp">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-2 text-lowercase fw-normal">
+                  Cultural Hacking
+                </h5>
+                <i class="fab fa-redhat fa-5x"></i>
+              </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
-              data-mdb-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseTwo">
-              Event Name #2
-            </button>
+      </div>
+    </section>
+
+    <div class="container-fluid parallax bg-image bg-image-2"></div>
+
+    <section class="py-5 px-3 w-100" id="events">
+      <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center">events</h2>
+
+      <div class="d-lg-flex justify-content-lg-center align-items-lg-center">
+        <div
+          class="accordion px-2 w-100 px-md-5"
+          id="accordionPanelsStayOpenExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Event Name #1
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                Event Name #2
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                Event Name #3
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid parallax bg-image bg-image-0">
+      <div class="mask"></div>
+    </div>
+
+    <section id="contact" class="py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <h2 class="mb-4 text-uppercase fw-bold fs-2 text text-center">
+            Contact us
           </h2>
-          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default,
-              until the collapse plugin adds the appropriate classes that we use to style each
-              element. These classes control the overall appearance, as well as the showing and
-              hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-              our default variables. It's also worth noting that just about any HTML can go within
-              the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
-              data-mdb-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseThree">
-              Event Name #3
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default,
-              until the collapse plugin adds the appropriate classes that we use to style each
-              element. These classes control the overall appearance, as well as the showing and
-              hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-              our default variables. It's also worth noting that just about any HTML can go within
-              the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <div class="container-fluid parallax bg-image bg-image-0">
-    <div class="mask"></div>
-  </div>
-
-  <section id="contact" class="py-5">
-    <div class="container-fluid">
-
-      <div class="row">
-        <h2 class="mb-4 text-uppercase fw-bold fs-2 text text-center">Contact us</h2>
-      </div>
-
-      <form id="form" class="text-center">
-
-        <div class="row row-cols-1 row-cols-md-2 align-items-center justify-content-center">
-
-          <div class="col d-flex flex-column justify-content-evenly mb-3 mb-md-0">
-            <!-- Name input -->
-            <div class="form-outline mt-0">
-              <input type="text" id="name" name="name" class="form-control">
-              <label class="form-label ml-0" for="name">Name</label>
-              <div class="form-notch">
-                <div class="form-notch-leading" style="width: 9px;"></div>
-                <div class="form-notch-middle" style="width: 42.4px;"></div>
-                <div class="form-notch-trailing"></div>
-              </div>
-            </div>
-
-            <!-- Email input -->
-            <div class="form-outline mt-3">
-              <input type="email" id="email" name="email" class="form-control">
-              <label class="form-label ml-0" for="email">Email address</label>
-              <div class="form-notch">
-                <div class="form-notch-leading" style="width: 9px;"></div>
-                <div class="form-notch-middle" style="width: 88.8px;"></div>
-                <div class="form-notch-trailing"></div>
-              </div>
-            </div>
-
-            <!-- Subject input -->
-            <div class="form-outline mt-3">
-              <input type="text" id="subject" name="subject" class="form-control">
-              <label class="form-label ml-0" for="subject">Subject</label>
-              <div class="form-notch">
-                <div class="form-notch-leading" style="width: 9px;"></div>
-                <div class="form-notch-middle" style="width: 50.4px;"></div>
-                <div class="form-notch-trailing"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col d-flex flex-column justify-content-evenly">
-            <!-- Message input -->
-            <div class="form-outline">
-              <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-              <label class="form-label ml-0" for="message">Message</label>
-              <div class="form-notch">
-                <div class="form-notch-leading" style="width: 9px;"></div>
-                <div class="form-notch-middle" style="width: 60px;"></div>
-                <div class="form-notch-trailing"></div>
-              </div>
-            </div>
-
-            <!-- Submit button -->
-            <button class="btn btn-primary btn-block mt-2">Send</button>
-          </div>
-
         </div>
 
-      </form>
+        <form id="form" class="text-center">
+          <div
+            class="
+              row row-cols-1 row-cols-md-2
+              align-items-center
+              justify-content-center
+            "
+          >
+            <div
+              class="col d-flex flex-column justify-content-evenly mb-3 mb-md-0"
+            >
+              <!-- Name input -->
+              <div class="form-outline mt-0">
+                <input type="text" id="name" name="name" class="form-control" />
+                <label class="form-label ml-0" for="name">Name</label>
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px"></div>
+                  <div class="form-notch-middle" style="width: 42.4px"></div>
+                  <div class="form-notch-trailing"></div>
+                </div>
+              </div>
 
-    </div>
-  </section>
+              <!-- Email input -->
+              <div class="form-outline mt-3">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                />
+                <label class="form-label ml-0" for="email">Email address</label>
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px"></div>
+                  <div class="form-notch-middle" style="width: 88.8px"></div>
+                  <div class="form-notch-trailing"></div>
+                </div>
+              </div>
 
-  <footer class="bg-dark text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <div class="mb-4">
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+              <!-- Subject input -->
+              <div class="form-outline mt-3">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                />
+                <label class="form-label ml-0" for="subject">Subject</label>
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px"></div>
+                  <div class="form-notch-middle" style="width: 50.4px"></div>
+                  <div class="form-notch-trailing"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex flex-column justify-content-evenly">
+              <!-- Message input -->
+              <div class="form-outline">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="3"
+                ></textarea>
+                <label class="form-label ml-0" for="message">Message</label>
+                <div class="form-notch">
+                  <div class="form-notch-leading" style="width: 9px"></div>
+                  <div class="form-notch-middle" style="width: 60px"></div>
+                  <div class="form-notch-trailing"></div>
+                </div>
+              </div>
+
+              <!-- Submit button -->
+              <button class="btn btn-primary btn-block mt-2">Send</button>
+            </div>
+          </div>
+        </form>
       </div>
-    </div>
+    </section>
 
-    <!-- Copyright -->
-    <div class="copy p-3">© 2020 Copyright: <a class="text-white" href="#">aresSoft.com</a></div>
-  </footer>
+    <footer class="bg-dark text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <div class="mb-4">
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
 
-  <!-- DMBootstrap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
-  <!-- Wow Animations -->
-  <script src="wow.min.js"></script>
-  <script>new WOW().init();</script>
+      <!-- Copyright -->
+      <div class="copy p-3">
+        © 2020 Copyright: <a class="text-white" href="#">aresSoft.com</a>
+      </div>
+    </footer>
 
-</body>
-
+    <!-- DMBootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <!-- Wow Animations -->
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>
