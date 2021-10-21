@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+.container{
+    padding: 15vh;
+}
+.container img{
+    width: 80vh;
+    height: 75vh;
+}
+
+  .header {
+    background: #1F1F1F;
+  }
+  nav ul {
+    display: flex;
+     justify-content: space-around;
+     list-style: none;
+     margin-left: 40%;
+     /* font-size: 25px;  */
+     color: rgb(242, 248, 246);
+     padding: 20px;
+  }
+  nav ul li:hover {
+    padding: 20px;
+    background: #999;
+    cursor: pointer;
+  }
+  .logo {
+    position: absolute;
+    padding: 10px 25px 0px 15px;
+  }
+  
+  body {
+    font-family: "roboto", Tahoma, sans-serif;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  header .navbar {
+    z-index: 1;
+    position: absolute;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  .mask {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .bg-image-1 {
+    background-image: url("../img/galaxia\(02\).jpg");
+  }
+  
+  .parallax {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 30%;
+  }
+  
+  #about .row .col {
+    height: 350px;
+    overflow: hidden;
+    max-height: 400px;
+    background-color: #373737;
+    color: #ffff;
+    padding-bottom: 0%;
+
+  }
+  
+  #about .row .col img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  footer a:hover {
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3);
+  }
+  
+  footer .copy {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  #form .col {
+    max-width: 450px;
+  }
+  #contact{
+    background-color: #999;
+    padding: 8vh;
+}

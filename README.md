@@ -1,0 +1,1 @@
+pantalla 3 casi completa 
