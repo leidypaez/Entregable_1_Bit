@@ -1,0 +1,132 @@
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-track:hover {
+  background: rgba(238, 238, 238, 0.8);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: rgba(170, 170, 170, 0.9);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+body {
+  font-family: "roboto", Tahoma, sans-serif;
+}
+
+p {
+  text-align: justify;
+}
+
+header .navbar {
+  z-index: 1;
+  position: absolute;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .bg-image {
+  height: 100vh;
+  background-size: cover;
+}
+
+.logo {
+  color: #ff3b3f;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-image-0 {
+  background-image: url("https://c1.wallpaperflare.com/preview/835/250/537/office-desk-computer-light.jpg");
+}
+
+.bg-image-1 {
+  background-image: url("https://wallpaperbat.com/img/18344-programmers-and-coders-wallpaper-hd-by-pcbots-part-ii.png");
+}
+
+.bg-image-2 {
+  background-image: url("https://wallpaperbat.com/img/370271-programming-hd-wallpaper-and-background-image.png");
+}
+
+.parallax {
+  height: 60vh;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#about .row .col {
+  height: 350px;
+  overflow: hidden;
+  max-height: 400px;
+}
+
+#about .row .col img {
+  width: 100%;
+  height: 100%;
+}
+
+#services .card {
+  max-width: 300px;
+  min-height: 170px;
+  color: #373737;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #f4f4f4;
+}
+
+#services .col:hover .card {
+  color: #f4f4f4;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  background-color: #373737;
+  -webkit-transform: scale(1.1, 1.1) rotateX(360deg);
+          transform: scale(1.1, 1.1) rotateX(360deg);
+}
+
+footer {
+  text-align: center;
+}
+
+footer a:hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+footer .copy {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1200px) {
+  #events .accordion {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #events .accordion {
+    max-width: 80%;
+  }
+}
+
+#form .col {
+  max-width: 450px;
+}
+/*# sourceMappingURL=styles.css.map */
