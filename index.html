@@ -52,7 +52,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#super-game">
+                <a id="super-game" class="nav-link" href="#super-game">
                   <i class="fas fa-trophy">&nbsp;</i>Super Game
                 </a>
               </li>
@@ -275,7 +275,192 @@
       </div>
     </section>
 
-    <!-- SECCION DE LA SEGUNDA PANTALLA SHOOTER -->
+    <!-- SECCION DE LA SEGUNDA PANTALLA -->
+    <section id="screen-shooter">
+      <div class="py-5">
+        <div class="contatiner-fluid px-4">
+          <div class="row text-uppercase fw-bold fs-2 text mb-4 text-center">
+            <h2>Gallery</h2>
+          </div>
+  
+          <!-- Gallery -->
+          <div class="gallery row row-cols-2 row-cols-md-4 gx-1 gy-0">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+          <!-- Gallery -->
+        </div>
+      </div>
+
+      <!-- MODAL -->
+      <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+        <div class="modal-dialog modal-lg  modal-dialog-centered">
+          <div class="modal-content p-0"></div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION DE LA CUARTA PANTALLA -->
+    <section id="screen-super-game">
+      <div class="container">
+
+        <br>
+        <header>
+            <h1>JUEGO DE MEMORIA</h1>
+        </header>
+
+        <!-- Inicio de Instrucciones -->
+        <div id="header">
+			<ul class="nav">
+				<li><a href="">Como jugar</a>
+					<ul>
+						<li><a href="">Empareja cartas en menor tiempo posible y con menos movimientos.</a></li>
+						</li>
+					</ul>
+				</li>
+
+				<li><a href="">Regla 1</a>
+					<ul>
+						<li><a href="">Haz click en las tarjetas.</a></li>
+					</ul>
+				</li>
+
+				<li><a href="">Regla 2</a>
+                    <ul>
+                        <li><a href="">Al revelarlas, recuerda la posicion de cada una.</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Regla 3</a>
+                    <ul>
+						<li><a href="">Retate a lograr combinarlas en el menor tiempo posible.</a></li>
+					</ul>
+                </li>
+			</ul>
+		</div>
+        <!-- Fin de Instrucciones -->   
+        <br>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Move(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card match" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" type="bolt" >
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card match" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card open show" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>🎉Felicitaciones 🎉</h2>
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    🎉Felicitaciones has ganado!🎉
+                </div>
+                <div class="content-2">
+                    <p>Hiciste <span id=finalMove> </span> movimientos </p>
+                    <p>en <span id=totalTime> </span> </p>
+                    <p>Ranking:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Play again 😄</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SECCION DE LA TERCERA PANTALLA SHOOTER -->
     <section id="screen-aventure">
       <!-- Carrusel de los videos de la segunda pantalla -->
       <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
@@ -452,7 +637,9 @@
       <!-- Copyright -->
       <div class="copy p-3">© 2020 Copyright: <a class="text-white" href="#">aresSoft.com</a></div>
     </footer>
-
+    <script src="/view/screenFour.js"></script>
+    <script src="/view/screenTwo.js"></script>
+    <script src="/view/screenThree.js"></script>
     <script src="/view/showScreen.js" type="module"></script>
     <!-- DMBootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
