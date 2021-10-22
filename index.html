@@ -152,7 +152,7 @@
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/eaW0tYpxyp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eaW0tYpxyp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
   
             <div class="text-center py-3">
@@ -216,37 +216,24 @@
     <div class="container">
       <div class="row">
         <div class="col-md">
-          <img src="img/sims4 2_auto_x2.jpg" class="img-fluid imagen1" alt="">
+          <a href="#about">
+          <img id="foto1" src="img/sims4 2_auto_x2.jpg" class="img-fluid imagen1" alt="" onclick="changeText(this)">
+          </a>
         </div>
         <div class="col-md">
-         <img src="img/gtaV(01)_auto_x2.jpg" class="img-fluid imagen2" alt="">
+          <a href="#about">
+          <img id="foto2"src="img/gtaV(01)_auto_x2.jpg" class="img-fluid imagen2" alt="" onclick="changeText(this)">
+          </a>
         </div>
         <div class="col-md">
-          <img src="img/spyro 1.png" class="img-fluid imagen3" alt="">
+          <a href="#about">
+          <img id="foto3"src="img/spyro 1.png" class="img-fluid imagen3" alt="" onclick="changeText(this)">
+          </a>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md">
-      <img src="img/sims4 2_auto_x2.jpg" class="img-fluid imagen1" alt="">
-    </div>
-    <div class="col-md">
-     <img src="img/gtaV(01)_auto_x2.jpg" class="img-fluid imagen2" alt="">
-    </div>
-    <div class="col-md">
-      <img src="img/spyro 1.png" class="img-fluid imagen3" alt="">
-    </div>
-  </div>
-</div>
-
-
-
-
-
 
 
 <section id="about" class="py-5">
@@ -255,53 +242,23 @@
     <div class="row row-cols-1 row-cols-md-2 g-0">
       <div class="col order-md-first d-flex align-items-center">
         <div class="p-5 lh-sm fw-normal">
-          <h3 class="mb-2 text-lowercase fw-bold text-center">
+          <h3 id="tituloJuego"class="mb-2 text-lowercase fw-bold text-center">
             Los SIMS 4
           </h3>
-          <p>
+          <p id="text">
             ¡Da rienda suelta a tu imaginación y crea un mundo único de Sims! Explora y personaliza todos los detalles, desde tus Sims a sus hogares y mucho más. Elige el aspecto, la personalidad y la ropa de tus Sims y decide cómo van a vivir día a día. Diseña y construye casas increíbles para cada familia y luego decóralas con tus muebles y elementos decorativos favoritos. Desplázate a distintos barrios donde podrás conocer a otros Sims y enterarte de sus vidas. 
           </p>
         </div>
       </div>
 
-      <div class="col order-first wow animate__backInRight">
-        <img src="img/sims4(horizontal).png"/>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 g-0">
-      <div class="col">
-        <img src="img/gtaV(horizontal).jpg" alt="" class="img-fluid wow animate__backInLeft"/>
-      </div>
-
-      <div class="col d-flex align-items-center">
-        <div class="p-5 lh-sm fw-normal">
-          <h3 class="mb-2 text-lowercase fw-bold text-center">
-          GTA V 
-          </h3>
-          <p>
-            En medio de una confusión, tres criminales muy diferentes barajan sus probabilidades de supervivencia y de éxito: Franklin, un estafador callejero en busca de oportunidades de verdad y dinero serio; Michael, profesional ex convicto, cuyo retiro no es tan prometedor como él hubiera esperado; y Trevor, un maníaco violento motivado por la posibilidad de encontrar drogas baratas y el próximo atraco importante. Agotadas las opciones, esta banda lo arriesgará todo en una serie de atrevidos y peligrosos atracos que marcarán sus vidas.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 g-0">
-      <div class="col order-md-first d-flex align-items-center">
-        <div class="p-5 lh-sm fw-normal">
-          <h3 class="mb-2 text-lowercase fw-bold text-center">
-            Spyro Reignited Trilogy
-          </h3>
-          <p>
-            El mismo aliento devastador y actitud candente, en alta definición. ¡Spyro regresa en Spyro™ Reignited Trilogy! Reaviva la llama con las versiones remasterizadas de los juegos originales: Spyro™ the Dragon, Spyro™ 2 Ripto's Rage! y Spyro™ Year of the Dragon.
-          </p>
-        </div>
-      </div>
-
-      <div class="col order-first wow animate__bounceInUp">
-        <img src="img/spyro(horizontal2).jpg" class="img-fluid wow animate__backInRight"/>
+      <div id="videoContainer" class="col order-first wow animate__backInRight">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z00mK3Pxc8w" frameborder="0" allowfullscreen wmode="Opaque"></iframe>
       </div>
     </div>
   </div>
 </section>
+
+
 
 <section id="contact" class="py-5">
   <div class="container-fluid">
@@ -448,6 +405,7 @@
 <script>
   new WOW().init();
 </script>
+<script src="js/main.js"></script>
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
