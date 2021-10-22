@@ -23,22 +23,53 @@
   </head>
 
   <body>
-    <header class="header">
-      <img class="logo" src="img/game-over.png" alt="#" width="200" />
-      <nav>
-        <ul>
-          <li>Clasicos</li>
-          <li>Shooter</li>
-          <li>Aventura</li>
-          <li>Super Game</li>
-          <li>Sobre Nosotros</li>
-        </ul>
+    <header class="menu">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-bluedark">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            ULTIMATE GAME
+          </a>
+  
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="beginning" class="nav-link active" aria-current="page" href="#clasicos">
+                  <i class="fas fa-gamepad ">&nbsp;</i>Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="shooter" class="nav-link" href="#shooter">
+                  <i class="fas fa-fighter-jet">&nbsp;</i>Shooter
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="aventure" class="nav-link" href="#aventura">
+                  <i class="fas fa-map-marked-alt">&nbsp;</i>Aventura
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#super-game">
+                  <i class="fas fa-trophy">&nbsp;</i>Super Game
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-nosotros">
+                  <i class="fas fa-star">&nbsp;</i>Sobre Nosotros
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <!-- SECTION DE LA PRIMERA PANTALLA -->
     <section id="first-screen">
-      <div class="part-two">
+      <div class="part-two" id="carrusel">
         <!-- Carrusel de las 3 fotos principales -->
         <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
           <!-- Indicators -->
@@ -244,6 +275,165 @@
       </div>
     </section>
 
+    <!-- SECCION DE LA SEGUNDA PANTALLA SHOOTER -->
+    <section id="screen-aventure">
+      <!-- Carrusel de los videos de la segunda pantalla -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- primera imagen que se muestra de carrusel -->
+          <div class="carousel-item active hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+            <img src="img/Minecraft.jpg" class="d-block w-100" alt="..."/>
+            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Minecraft</h5>
+              <p>¡Hola, bienvenido al mundo de Minecraft, jugador! Aquí eres libre de hacer lo que quieras. El mundo no tiene límites, todo es posible, aquí los únicos límites los pones tú.</p>
+            </div>
+          </div>
+          <!-- segunda imagen que se muestra del carrusel -->
+          <div class="carousel-item hover-zoom" data-ripple-color="light">
+            <img src="img/red-dead-redemption.jpg" class="d-block w-100" alt="..."/>
+            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Red Dead Redemption 2</h5>
+              <p>América, 1899. El ocaso del Salvaje Oeste ha comenzado y las fuerzas de la ley dan caza a las últimas bandas de forajidos. Los que no se rinden o sucumben, son asesinados. Tras un desastroso atraco fallido en la ciudad de Blackwater, Arthur Morgan y la banda de Van der Linde se ven obligados a huir.</p>
+            </div>
+          </div>
+          <!-- tercera imagen que se muestra del carrusel -->
+          <div class="carousel-item hover-zoom" data-ripple-color="light">
+            <img src="img/cyberpunk(01)_auto_x2.jpg" class="d-block w-100" alt="..."/>
+            <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cyberpunk 2077</h5>
+              <p>Cyberpunk 2077 es muy probablemente el juego más espectacular del año pasado. Su atención al detalle, su mundo, contexto y personalidad supera por mucho lo que vimos a lo largo de 2020. La combinación de elementos visuales es simplemente alucinante y cuando todo el escenario se mezcla con la narrativa.</p>
+            </div>
+          </div>
+
+          <!-- Section: Modals -->
+          <div class="screen-shooter">
+            <!-- Modal 1 -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MmB9b5njVbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+        
+                  <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 2 -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="ratio ratio-16x9">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eaW0tYpxyp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+
+                  <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 3 -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VhM3NRu23Sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+
+                  <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Section: Modals -->
+        </div>
+        <!-- Modal gallery -->
+        </div>
+        <!-- controles -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide=>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container-fluid parallax bg-image bg-image-3">
+        <div class="mask">
+          <div class="container">
+            <!-- <a>
+              <div class="mask waves-effect waves-light"></div>
+            </a> -->
+            <div class="row">
+              <div class="col-md">
+                <a href="#about">
+                <img id="foto1" src="img/sims4.jpg" class="img-fluid imagen1" alt="soy sim" onclick="changeText(this)">
+                </a>
+              </div>
+              <div class="col-md">
+                <a href="#about">
+                <img id="foto2"src="img/gtaV(01)_auto_x2.jpg" class="img-fluid imagen2" alt="" onclick="changeText(this)">
+                </a>
+              </div>
+              <div class="col-md">
+                <a href="#about">
+                <img id="foto3" src="img/spyro.png" class="img-fluid imagen3" alt="soy spiro" onclick="changeText(this)">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="py-5">
+
+        <div class="container-fluid g-0">
+          <div class="row row-cols-1 row-cols-md-2 g-0">
+            <div class="col order-md-first d-flex align-items-center">
+              <div class="p-5 lh-sm fw-normal">
+                <h3 id="tituloJuego"class="mb-2 text-lowercase fw-bold text-center">
+                  Los SIMS 4
+                </h3>
+                <p id="text">
+                  ¡Da rienda suelta a tu imaginación y crea un mundo único de Sims! Explora y personaliza todos los detalles, desde tus Sims a sus hogares y mucho más. Elige el aspecto, la personalidad y la ropa de tus Sims y decide cómo van a vivir día a día. Diseña y construye casas increíbles para cada familia y luego decóralas con tus muebles y elementos decorativos favoritos. Desplázate a distintos barrios donde podrás conocer a otros Sims y enterarte de sus vidas. 
+                </p>
+              </div>
+            </div>
+
+            <div id="videoContainer" class="col order-first wow animate__backInRight">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z00mK3Pxc8w" frameborder="0" allowfullscreen wmode="Opaque"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SECCION FOOTER PARA TODAS LAS PANTALLAS -->
     <footer class="bg-dark text-white">
       <!-- Grid container -->
@@ -263,6 +453,7 @@
       <div class="copy p-3">© 2020 Copyright: <a class="text-white" href="#">aresSoft.com</a></div>
     </footer>
 
+    <script src="/view/showScreen.js" type="module"></script>
     <!-- DMBootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
     <!-- Wow Animations -->

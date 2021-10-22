@@ -4,36 +4,79 @@
 }
 
 body {
-  background: #999;
+  background: rgb(240, 236, 236);
+  font-family: "roboto", Tahoma, sans-serif;
 }
-.header {
+  
+/* HEADER DE LA PAGINA */
+.navbar-brand {
+  padding-left: 7vh;
+  font-weight: 1000;
+  font-size: 16px;
+}
+
+.container {
+  padding: 15vh;
+}
+
+.container img {
+  width: 80vh;
+  height: 75vh;
+}
+
+.menu, nav {
   background: #1F1F1F;
+  height: 12vh;
 }
+
+nav ul li a {
+  display: fleX;
+}
+
 nav ul {
   display: flex;
-   justify-content: space-around;
-   list-style: none;
-   margin-left: 40%;
-   /* font-size: 25px;  */
-   color: rgb(242, 248, 246);
-   padding: 20px;
-}
-nav ul li:hover {
+  justify-content: space-around;
+  list-style: none;
+  margin-left: 40%;
+  color: rgb(242, 248, 246);
   padding: 20px;
-  background: #999;
+}
+
+nav ul li:hover {
+  max-width: 50%;
+  background: rgb(160, 159, 159);
+  color: black;
   cursor: pointer;
 }
+
 .logo {
   position: absolute;
   padding: 10px 25px 0px 15px;
 }
 
-.part-two {
-  margin-top: -1.5%;
+p {
+  text-align: justify;
 }
 
+header .navbar {
+  z-index: 1;
+  position: absolute;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+header .bg-image {
+  height: 100vh;
+  background-size: cover;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* PARTE DE DATOS CURIOSOS PRIMERA PANTALLA */
 .img-fondo {
-  background: linear-gradient( to right, rgba(43, 42, 42, 0.75), rgba(37, 45, 141, 0.75)), url('img/galaxia.jpg');
+  background: linear-gradient( to right, rgba(59, 59, 59, 0.75), rgba(75, 4, 97, 0.75)), url('img/galaxia.jpg');
 }
 
 .curious {
@@ -52,55 +95,7 @@ nav ul li:hover {
   color: #cac4c4;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-::-webkit-scrollbar-track:hover {
-  background: rgba(238, 238, 238, 0.8);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 25px;
-  background-color: rgba(170, 170, 170, 0.9);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #999;
-}
-
-body {
-  font-family: "roboto", Tahoma, sans-serif;
-}
-
-p {
-  text-align: justify;
-}
-
-header .navbar {
-  z-index: 1;
-  position: absolute;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-header .bg-image {
-  height: 100vh;
-  background-size: cover;
-}
-
-.mask {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
+/* IMAGENES Y PARALLAX PRIMERA PANTALLA*/
 .bg-image-0 {
   background-image: url("img/kirby.gif");
 }
@@ -109,10 +104,6 @@ header .bg-image {
   background-image: url("img/arcade.jpg");
 }
 
-/* .bg-image-2 {
-  background-image: url("https://wallpaperbat.com/img/370271-programming-hd-wallpaper-and-background-image.png");
-} */
-
 .parallax {
   height: 60vh;
   position: relative;
@@ -120,44 +111,29 @@ header .bg-image {
   background-attachment: fixed;
 }
 
-#about .row .col {
-  height: 350px;
-  overflow: hidden;
-  max-height: 400px;
+
+/* CSS DE LA SEGUNDA */
+
+#screen-aventure {
+  display: none;
+} 
+
+.bg-image-3 {
+  background-image: url("img/galaxia\(02\).jpg");
 }
 
-#about .row .col img {
-  width: 100%;
-  height: 100%;
+.prueba {
+  background: turquoise;
 }
 
-#services .card {
-  max-width: 300px;
-  min-height: 170px;
-  color: #373737;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  background-color: #f4f4f4;
-}
-
-#services .col:hover .card {
-  color: #f4f4f4;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  background-color: #373737;
-  -webkit-transform: scale(1.1, 1.1) rotateX(360deg);
-          transform: scale(1.1, 1.1) rotateX(360deg);
-}
-
+/* FOOTER DE LA PAGINA */
 footer {
   text-align: center;
 }
 
 footer a:hover {
   -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
 }
 
 footer .copy {
@@ -179,4 +155,3 @@ footer .copy {
 #form .col {
   max-width: 450px;
 }
-/*# sourceMappingURL=styles.css.map */
