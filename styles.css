@@ -16,14 +16,13 @@ body {
 }
 
 .container {
-  padding: 15vh;
+  padding: 5vh;
 }
 
 .container img {
-  width: 80vh;
-  height: 75vh;
+  width: 40vh;
+  height: 50vh;
 }
-
 .menu, nav {
   background: #1F1F1F;
   height: 12vh;
@@ -114,16 +113,17 @@ header .bg-image {
 
 /* SECCION DE LA SEGUNDA */
 
-#screen-aventure {
+#screen-shooter {
   display: none;
 } 
 
 .bg-image-3 {
   background-image: url("img/galaxia\(02\).jpg");
+  width: 100%;
 }
 
 /* SECCION DE LA TERCERA PANTALLA */
-#screen-shooter {
+#screen-aventure {
   display: none;
 }
 .gallery { 
@@ -585,4 +585,30 @@ footer .copy {
 
 #form .col {
   max-width: 450px;
+}
+
+/* X */
+
+nav{
+  height: 50px;
+  max-height: 50px;
+}
+ 
+.nav-item {
+  padding: 0;
+  margin: 0 5px;
+}
+ 
+.nav-item:hover {
+  padding: 0;
+  color: #ff3b3f;
+  transform: scale(1.2, 1.2);
+  background-color: transparent;
+}
+ 
+header img {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
 }

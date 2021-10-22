@@ -19,105 +19,87 @@
     <!-- css's -->
     <link rel="stylesheet" href="styles.css"/>
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
-    <title>ARESoft</title>
+    <title>ULTIMATE GAME</title>
   </head>
 
   <body>
-    <header class="menu">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-bluedark">
-        <div class="container-fluid">
-          <a class="navbar-brand">
-            ULTIMATE GAME
-          </a>
-  
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarRightAlignExample">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a id="beginning" class="nav-link active" aria-current="page" href="#clasicos">
-                  <i class="fas fa-gamepad ">&nbsp;</i>Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a id="shooter" class="nav-link" href="#shooter">
-                  <i class="fas fa-fighter-jet">&nbsp;</i>Shooter
-                </a>
-              </li>
-              <li class="nav-item">
-                <a id="aventure" class="nav-link" href="#aventura">
-                  <i class="fas fa-map-marked-alt">&nbsp;</i>Aventura
-                </a>
-              </li>
-              <li class="nav-item">
-                <a id="super-game" class="nav-link" href="#super-game">
-                  <i class="fas fa-trophy">&nbsp;</i>Super Game
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#sobre-nosotros">
-                  <i class="fas fa-star">&nbsp;</i>Sobre Nosotros
-                </a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand m-0 ms-2 p-0">ULTIMATE GAME</a>
+ 
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+ 
+        <div class="collapse navbar-collapse me-2" id="navbarRightAlignExample">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a id="beginning" class="nav-link active" aria-current="page" href="#clasicos">
+                <i class="fas fa-gamepad ">&nbsp;</i> Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="shooter" class="nav-link" href="#shooter">
+                <i class="fas fa-fighter-jet">&nbsp;</i>  Shooter
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="aventure" class="nav-link" href="#aventura">
+                <i class="fas fa-map-marked-alt">&nbsp;</i>  Aventura
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="super-game" class="nav-link" href="#super-game">
+                <i class="fas fa-trophy">&nbsp;</i>  Super Game
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-nosotros">
+                <i class="fas fa-star">&nbsp;</i>  Sobre Nosotros
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <!-- SECTION DE LA PRIMERA PANTALLA -->
     <section id="first-screen">
-      <div class="part-two" id="carrusel">
-        <!-- Carrusel de las 3 fotos principales -->
-        <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-          <!-- Indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-  
-          <!-- primera foto -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/halo-5.jpg" class="d-block w-100" alt="..."/>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Halo 5</h5>
+        <!-- Carousel -->
+        <header>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+            <div class="carousel-inner">
+             
+              <div class="carousel-item active" data-mdb-interval="1500">
+                <img src="img/halo-5.jpg" class="d-block w-100 h-100" alt="..."/>
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <a class="btn btn-outline-light btn-lg text-white" href="#game" role="button">Nuestro Juego</a>
+                  </div>
+                </div>
               </div>
-            </div>
-  
-            <!-- segunda foto -->
-            <div class="carousel-item">
-              <img src="img/crash_bandicoot.jpg" class="d-block w-100" alt="..."/>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Crash Bandicoot</h5>
+             
+              <div class="carousel-item" data-mdb-interval="1500">
+                <img src="img/crash_bandicoot.jpg" class="d-block w-100 h-100" alt="..."/>
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <a class="btn btn-outline-light btn-lg text-white" href="#game" role="button">Nuestro Juego</a>
+                  </div>
+                </div>
               </div>
-            </div>
-  
-            <!-- tercera foto -->
-            <div class="carousel-item">
-              <img src="img/mario kart.jpg" class="d-block w-100" alt="..."/>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Mario Kart</h5>
+             
+              <div class="carousel-item" data-mdb-interval="1500">
+                <img src="img/mario kart.jpg" class="d-block w-100 h-100" alt="..." />
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <a class="btn btn-outline-light btn-lg text-white" href="#game" role="button">Nuestro Juego</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Inner -->
-  
-          <!-- Controles -->
-          <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-  
+        </header>
+
       <!-- section de los datos curioso primera pantalla -->
       <section id="about" class="py-5 img-fondo">
         <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center curious">
@@ -146,17 +128,17 @@
           <!-- segunda imagen -->
           <div class="row row-cols-1 row-cols-md-2 g-0">
             <div class="col">
-              <img src="img/spacewar.png" alt="" class="img-fluid wow animate__bounceInUp"/>
+              <img src="img/mario-donkey.jpg" alt="" class="img-fluid wow animate__bounceInUp"/>
             </div>
             <div class="col d-flex align-items-center">
               <div class="p-5 lh-sm fw-normal">
                 <h3 class="mb-2 text-lowercase fw-bold text-center curious">
-                Space War
+                Donkey Kong
                 </h3>
                 <p class="curious">
-                  Spacewar!, creado en 1961, fue el primer 
-                  videojuego de disparos de la historia y se realizó 
-                  en apenas 200 horas.
+                  Mario Bros tuvo su primer empleo en 
+                  Donkey Kong y fue de carpintero, no de fontanero. 
+                  Además, se llamaba Jumpman.
                 </p>
               </div>
             </div>
@@ -185,15 +167,15 @@
         <!-- cuarta imagen -->
         <div class="row row-cols-1 row-cols-md-2 g-0">
           <div class="col">
-            <img src="img/mario-donkey.jpg" alt="" class="img-fluid wow animate__bounceInUp"/>
+            <img src="img/spacewar.png" alt=""  class="img-fluid wow animate__bounceInUp"/>
           </div>
           <div class="col d-flex align-items-center">
             <div class="p-5 lh-sm fw-normal">
-              <h3 class="mb-2 text-lowercase fw-bold text-center curious">Donkey Kong</h3>
+              <h3 class="mb-2 text-lowercase fw-bold text-center curious"> Space War</h3>
               <p class="curious">
-                Mario Bros tuvo su primer empleo en 
-                Donkey Kong y fue de carpintero, no de fontanero. 
-                Además, se llamaba Jumpman.
+                Spacewar!, creado en 1961, fue el primer 
+                videojuego de disparos de la historia y se realizó 
+                en apenas 200 horas.
               </p>
             </div>
           </div>
@@ -301,6 +283,8 @@
         </div>
       </div>
     </section>
+
+
     <!-- SECCION DE LA CUARTA PANTALLA -->
     <section id="screen-super-game">
       <div class="container">
@@ -427,40 +411,10 @@
                 </button>
             </div>
         </div>
-
     </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- SECCION DE LA TERCERA PANTALLA SHOOTER -->
+    <!-- SECCION DE LA TERCERA PANTALLA AVENTURA -->
     <section id="screen-aventure">
       <!-- Carrusel de los videos de la segunda pantalla -->
       <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
@@ -573,9 +527,6 @@
       <div class="container-fluid parallax bg-image bg-image-3">
         <div class="mask">
           <div class="container">
-            <!-- <a>
-              <div class="mask waves-effect waves-light"></div>
-            </a> -->
             <div class="row">
               <div class="col-md">
                 <a href="#about">
@@ -635,8 +586,9 @@
       </div>
 
       <!-- Copyright -->
-      <div class="copy p-3">© 2020 Copyright: <a class="text-white" href="#">aresSoft.com</a></div>
+      <div class="copy p-3">© 2020 Copyright: <a class="text-white" href="#">ultimateGame.com</a></div>
     </footer>
+    <script src="/view/index.js"></script>
     <script src="/view/screenFour.js"></script>
     <script src="/view/screenTwo.js"></script>
     <script src="/view/screenThree.js"></script>

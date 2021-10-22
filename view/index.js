@@ -1,13 +1,12 @@
 generateID = () => `${new Date().getTime()}_${Math.random().toString(36).substr(2, 9)}`;
 
-import { } from ''
 data = [
     {
         "id": this.generateID(),
         "title": "call of duty",
         "year": 2000,
         "urlTrailer": "urlTrailer",
-        "urlImagen": "",
+        "urlImagen": "./img/call-of-dutty.jpg",
         "description": "rick toilets",
     },
     {
