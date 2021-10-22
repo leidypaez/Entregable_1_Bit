@@ -18,46 +18,44 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/gallery.css" />
-    <link rel="stylesheet" href="./css/game.css">
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
     <title>ARESoft</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand m-0 p-0">ULTIMATE GAME</a>
+        <a class="navbar-brand m-0 ms-2 p-0">ULTIMATE GAME</a>
 
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <div class="collapse navbar-collapse me-2" id="navbarRightAlignExample">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a id="beginning" class="nav-link active" aria-current="page" href="#clasicos">
-                <i class="fas fa-gamepad ">&nbsp;</i>Inicio
+                <i class="fas fa-gamepad ">&nbsp;</i>  Inicio
               </a>
             </li>
             <li class="nav-item">
               <a id="shooter" class="nav-link" href="#shooter">
-                <i class="fas fa-fighter-jet">&nbsp;</i>Shooter
+                <i class="fas fa-fighter-jet">&nbsp;</i>  Shooter
               </a>
             </li>
             <li class="nav-item">
               <a id="aventure" class="nav-link" href="#aventura">
-                <i class="fas fa-map-marked-alt">&nbsp;</i>Aventura
+                <i class="fas fa-map-marked-alt">&nbsp;</i>  Aventura
               </a>
             </li>
             <li class="nav-item">
               <a id="super-game" class="nav-link" href="#super-game">
-                <i class="fas fa-trophy">&nbsp;</i>Super Game
+                <i class="fas fa-trophy">&nbsp;</i>  Super Game
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sobre-nosotros">
-                <i class="fas fa-star">&nbsp;</i>Sobre Nosotros
+                <i class="fas fa-star">&nbsp;</i>  Sobre Nosotros
               </a>
             </li>
           </ul>
@@ -69,55 +67,72 @@
     <header>
       <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-mdb-ride="carousel">
         <div class="carousel-inner">
+          
           <div class="carousel-item active" data-mdb-interval="1500">
-            <img
-              src="img/halo-5.jpg"
-              class="d-block w-100 h-100"
-              alt="..."
-            />
+            <img src="img/halo-5.jpg" class="d-block w-100 h-100" alt="..."/>
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <a class="btn btn-outline-light btn-lg text-white" href="#game" role="button">Nuestro Juego</a>
+              </div>
+            </div>
           </div>
+         
           <div class="carousel-item" data-mdb-interval="1500">
-            <img
-              src="img/crash_bandicoot.jpg"
-              class="d-block w-100 h-100"
-              alt="..."
-            />
+            <img src="img/crash_bandicoot.jpg" class="d-block w-100 h-100" alt="..."/>
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <a class="btn btn-outline-light btn-lg text-white" href="#game" role="button">Nuestro Juego</a>
+              </div>
+            </div>
           </div>
+          
           <div class="carousel-item" data-mdb-interval="1500">
-            <img
-              src="img/mario kart.jpg"
-              class="d-block w-100 h-100"
-              alt="..."
-            />
-          </div>
-        </div>
-      </div>
-    </header>
-   
-    <!-- Datos curiosos -->
-    <section class="py-5">
-      <div class="container-fluid g-0">
-        
-        <div class="row m-0 p-0 w-100">
-          <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center p-0">Datos curiosos</h2>
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-2 g-0">
-          <div class="col order-md-first d-flex align-items-center">
-            <div class="p-5 lh-sm fw-normal">
-              <h3 class="mb-2 text-lowercase fw-bold text-center">Jack el destripador</h3>
-              <p>
-                El primer videojuego en ser clasificado como “para mayores de 18 años” 
-                fue uno sobre Jack, el Destripador en 1987. El motivo: sus violentas 
-                imágenes.
-              </p>
+            <img src="img/mario kart.jpg" class="d-block w-100 h-100" alt="..." />
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <a class="btn btn-outline-light btn-lg text-white" href="#game" role="button">Nuestro Juego</a>
+              </div>
             </div>
           </div>
 
-          <div class="col order-first wow animate__bounceInUp">
-            <img src="img/jack-the-ripper.jpg" class="img-fluid wow animate__bounceInUp"/>
-          </div>
         </div>
+      </div>
+
+    </header>
+   
+    <!-- Datos curiosos -->
+    <section class="datosCuriosos px-5">
+
+      <div class="container-fluid g-0">
+        
+        <div class="row">
+          <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center p-0">Datos curiosos</h2>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+
+          <div class="col">
+            <h3>Jack el destripador</h3>
+            <p>
+              El primer videojuego en ser clasificado como “para mayores de 18 años” 
+              fue uno sobre Jack, el Destripador en 1987. El motivo: sus violentas 
+              imágenes.
+            </p>
+          </div>
+
+          <div class="col">
+            <img src="img/jack-the-ripper.jpg" class="img-fluid wow animate__bounceInUp imgCurious"/>
+          </div>
+
+        </div>
+<!-- 
+        <div class="row row-cols-1 row-cols-md-2 g-0">
+          <div class="col order-md-first d-flex align-items-center">
+           
+          </div>
+
+         
+        </div> -->
 
         <div class="row row-cols-1 row-cols-md-2 g-0">
           <div class="col">
@@ -213,7 +228,7 @@
     </div>
 
     <!-- Game -->
-    <section class="py-5">
+    <section id="game" class="py-5">
       <div class="containerGame">
 
         <br>

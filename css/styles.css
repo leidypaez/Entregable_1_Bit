@@ -1,29 +1,51 @@
+@import 'game.css';
+@import 'scroll.css';
+@import 'gallery.css';
+
 * {
   margin: 0;
   padding: 0;
 }
 
-nav ul {
-  display: flex;
-   justify-content: space-around;
-   list-style: none;
-   margin-left: 40%;
-   /* font-size: 25px;  */
-   color: rgb(242, 248, 246);
-   padding: 20px;
-}
-nav ul li:hover {
-  padding: 20px;
-  background: #999;
-  cursor: pointer;
-}
-.logo {
-  position: absolute;
-  padding: 10px 25px 0px 15px;
+nav{
+  height: 50px;
+  max-height: 50px;
 }
 
-.prueba {
-  margin-top: -1.5%;
+.nav-item {
+  padding: 0;
+  margin: 0 5px;
+}
+
+.nav-item:hover {
+  padding: 0;
+  color: #ff3b3f;
+  transform: scale(1.2, 1.2);
+  background-color: transparent;
+}
+
+header img {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+/*
+.datosCuriosos {
+  background-color: #f3f3f7;
+}
+
+.datosCuriosos .col {
+  margin: 0;
+  padding: 0;
+}
+
+.imgCurious {
+  max-width: 400px;
+  border-radius: 20px; 
+  margin: 0 auto;
+  transform-origin: 50% 50%;  
+  transform: translate(-50%, -50%); 
 }
 
 
@@ -31,30 +53,6 @@ nav ul li:hover {
 
 
 
-/* width */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-::-webkit-scrollbar-track:hover {
-  background: rgba(238, 238, 238, 0.8);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 25px;
-  background-color: rgba(170, 170, 170, 0.9);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #999;
-}
 
 body {
   font-family: "roboto", Tahoma, sans-serif;
