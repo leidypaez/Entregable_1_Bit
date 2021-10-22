@@ -28,14 +28,29 @@ nav ul li:hover {
   padding: 10px 25px 0px 15px;
 }
 
-.prueba {
+.part-two {
   margin-top: -1.5%;
 }
 
+.img-fondo {
+  background: linear-gradient( to right, rgba(43, 42, 42, 0.75), rgba(37, 45, 141, 0.75)), url('img/galaxia.jpg');
+}
 
+.curious {
+  color: rgb(250, 246, 240);
+}
 
+.contact {
+  background: #1F1F1F;
+}
 
+.only-send {
+  background: #9445d4;
+}
 
+.only-contact {
+  color: #cac4c4;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -82,25 +97,21 @@ header .bg-image {
   background-size: cover;
 }
 
-.logo {
-  color: #ff3b3f;
-}
-
 .mask {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-image-0 {
-  background-image: url("https://c1.wallpaperflare.com/preview/835/250/537/office-desk-computer-light.jpg");
+  background-image: url("img/kirby.gif");
 }
 
 .bg-image-1 {
-  background-image: url("https://wallpaperbat.com/img/18344-programmers-and-coders-wallpaper-hd-by-pcbots-part-ii.png");
+  background-image: url("img/arcade.jpg");
 }
 
-.bg-image-2 {
+/* .bg-image-2 {
   background-image: url("https://wallpaperbat.com/img/370271-programming-hd-wallpaper-and-background-image.png");
-}
+} */
 
 .parallax {
   height: 60vh;
