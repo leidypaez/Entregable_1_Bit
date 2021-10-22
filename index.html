@@ -37,217 +37,218 @@
     </header>
 
     <!-- SECTION DE LA PRIMERA PANTALLA -->
-    <section class="part-two">
-      <!-- Carousel wrapper -->
-      <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    <section id="first-screen">
+      <div class="part-two">
+        <!-- Carrusel de las 3 fotos principales -->
+        <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+  
+          <!-- primera foto -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/halo-5.jpg" class="d-block w-100" alt="..."/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Halo 5</h5>
+              </div>
+            </div>
+  
+            <!-- segunda foto -->
+            <div class="carousel-item">
+              <img src="img/crash_bandicoot.jpg" class="d-block w-100" alt="..."/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Crash Bandicoot</h5>
+              </div>
+            </div>
+  
+            <!-- tercera foto -->
+            <div class="carousel-item">
+              <img src="img/mario kart.jpg" class="d-block w-100" alt="..."/>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mario Kart</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Inner -->
+  
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-
-        <!-- Inner -->
-        <div class="carousel-inner">
-          <!-- Single item -->
-          <div class="carousel-item active">
-            <img src="img/halo-5.jpg" class="d-block w-100" alt="..."/>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Halo 5</h5>
-            </div>
-          </div>
-
-          <!-- Single item -->
-          <div class="carousel-item">
-            <img src="img/crash_bandicoot.jpg" class="d-block w-100" alt="..."/>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Crash Bandicoot</h5>
-            </div>
-          </div>
-
-          <!-- Single item -->
-          <div class="carousel-item">
-            <img src="img/mario kart.jpg" class="d-block w-100" alt="..."/>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Mario Kart</h5>
-            </div>
-          </div>
-        </div>
-        <!-- Inner -->
-
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <!-- Carousel wrapper -->
-    </section>
-
-    <section id="about" class="py-5 img-fondo">
-      <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center curious">
-        Datos curiosos
-      </h2>
-
-      <div class="container-fluid g-0">
-        <div class="row row-cols-1 row-cols-md-2 g-0">
-          <div class="col order-md-first d-flex align-items-center">
-            <div class="p-5 lh-sm fw-normal">
-              <h3 class="mb-2 text-lowercase fw-bold text-center curious">
-                Jack el destripador
-              </h3>
-              <p class="curious">
-                El primer videojuego en ser clasificado como “para mayores de 18 años” 
-                fue uno sobre Jack, el Destripador en 1987. El motivo: sus violentas 
-                imágenes.
-              </p>
+  
+      <!-- section de los datos curioso primera pantalla -->
+      <section id="about" class="py-5 img-fondo">
+        <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center curious">
+          Datos curiosos
+        </h2>
+        <div class="container-fluid g-0">
+          <!-- primera imagen -->
+          <div class="row row-cols-1 row-cols-md-2 g-0">
+            <div class="col order-md-first d-flex align-items-center">
+              <div class="p-5 lh-sm fw-normal">
+                <h3 class="mb-2 text-lowercase fw-bold text-center curious">
+                  Jack el destripador
+                </h3>
+                <p class="curious">
+                  El primer videojuego en ser clasificado como “para mayores de 18 años” 
+                  fue uno sobre Jack, el Destripador en 1987. El motivo: sus violentas 
+                  imágenes.
+                </p>
+              </div>
+            </div>
+            <div class="col order-first wow animate__bounceInUp">
+              <img src="img/jack-the-ripper.jpg" class="img-fluid wow animate__bounceInUp"/>
             </div>
           </div>
-
-          <div class="col order-first wow animate__bounceInUp">
-            <img src="img/jack-the-ripper.jpg" class="img-fluid wow animate__bounceInUp"/>
+  
+          <!-- segunda imagen -->
+          <div class="row row-cols-1 row-cols-md-2 g-0">
+            <div class="col">
+              <img src="img/spacewar.png" alt="" class="img-fluid wow animate__bounceInUp"/>
+            </div>
+            <div class="col d-flex align-items-center">
+              <div class="p-5 lh-sm fw-normal">
+                <h3 class="mb-2 text-lowercase fw-bold text-center curious">
+                Space War
+                </h3>
+                <p class="curious">
+                  Spacewar!, creado en 1961, fue el primer 
+                  videojuego de disparos de la historia y se realizó 
+                  en apenas 200 horas.
+                </p>
+              </div>
+            </div>
+          </div>
+  
+           <!-- tercera imagen -->
+          <div class="row row-cols-1 row-cols-md-2 g-0">
+            <div class="col order-md-first d-flex align-items-center">
+              <div class="p-5 lh-sm fw-normal">
+                <h3 class="mb-2 text-lowercase fw-bold text-center curious">
+                  Call Of Duty Modern Warfare
+                </h3>
+                <p class="curious">
+                  Call of Duty: Moder Warfare 2 es el videojuego que ha logrado 
+                  la mayor recaudación por ventas de un solo día. Consiguió 410 millones de dólares 
+                  en su primer día de salida al mercado. En segundo lugar está Grand Theft 
+                  Auto con 300 millones de dólares.
+                </p>
+              </div>
+            </div>
+            <div class="col order-first wow animate__bounceInUp">
+              <img src="img/call-of-duty.jpg" class="img-fluid wow animate__bounceInUp"/>
+            </div>
           </div>
         </div>
-
+        <!-- cuarta imagen -->
         <div class="row row-cols-1 row-cols-md-2 g-0">
           <div class="col">
-            <img src="img/spacewar.png" alt="" class="img-fluid wow animate__bounceInUp"/>
+            <img src="img/mario-donkey.jpg" alt="" class="img-fluid wow animate__bounceInUp"/>
           </div>
-
           <div class="col d-flex align-items-center">
             <div class="p-5 lh-sm fw-normal">
-              <h3 class="mb-2 text-lowercase fw-bold text-center curious">
-              Space War
-              </h3>
+              <h3 class="mb-2 text-lowercase fw-bold text-center curious">Donkey Kong</h3>
               <p class="curious">
-                Spacewar!, creado en 1961, fue el primer 
-                videojuego de disparos de la historia y se realizó 
-                en apenas 200 horas.
+                Mario Bros tuvo su primer empleo en 
+                Donkey Kong y fue de carpintero, no de fontanero. 
+                Además, se llamaba Jumpman.
               </p>
             </div>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 g-0">
-          <div class="col order-md-first d-flex align-items-center">
-            <div class="p-5 lh-sm fw-normal">
-              <h3 class="mb-2 text-lowercase fw-bold text-center curious">
-                Call Of Duty Modern Warfare
-              </h3>
-              <p class="curious">
-                Call of Duty: Moder Warfare 2 es el videojuego que ha logrado 
-                la mayor recaudación por ventas de un solo día. Consiguió 410 millones de dólares 
-                en su primer día de salida al mercado. En segundo lugar está Grand Theft 
-                Auto con 300 millones de dólares.
-              </p>
-            </div>
-          </div>
-
-          <div class="col order-first wow animate__bounceInUp">
-            <img src="img/call-of-duty.jpg" class="img-fluid wow animate__bounceInUp"/>
-          </div>
-        </div>
+      </section>
+      <!-- imagen parallax (imagen arcade) -->
+      <div class="container-fluid parallax bg-image bg-image-1">
+        <div class="mask"></div>
       </div>
-      <div class="row row-cols-1 row-cols-md-2 g-0">
-        <div class="col">
-          <img src="img/mario-donkey.jpg" alt="" class="img-fluid wow animate__bounceInUp"/>
-        </div>
-
-        <div class="col d-flex align-items-center">
-          <div class="p-5 lh-sm fw-normal">
-            <h3 class="mb-2 text-lowercase fw-bold text-center curious">
-            Donkey Kong
-            </h3>
-            <p class="curious">
-              Mario Bros tuvo su primer empleo en 
-              Donkey Kong y fue de carpintero, no de fontanero. 
-              Además, se llamaba Jumpman.
-            </p>
+  
+      <!-- seccion se contactos -->
+      <section id="contact" class="py-5 contact">
+        <div class="container-fluid">
+  
+          <div class="row">
+            <h2 class="mb-4 text-uppercase fw-bold fs-2 text text-center only-contact">Contactanos</h2>
           </div>
-        </div>
-      </div>
-    </section>
-    <div class="container-fluid parallax bg-image bg-image-1">
-      <div class="mask"></div>
-    </div>
+          <form id="form" class="text-center">
+            <div class="row row-cols-1 row-cols-md-2 align-items-center justify-content-center">
+              <div class="col d-flex flex-column justify-content-evenly mb-3 mb-md-0">
   
-    <section id="contact" class="py-5 contact">
-      <div class="container-fluid">
-  
-        <div class="row">
-          <h2 class="mb-4 text-uppercase fw-bold fs-2 text text-center only-contact">Contactanos</h2>
-        </div>
-  
-        <form id="form" class="text-center">
-  
-          <div class="row row-cols-1 row-cols-md-2 align-items-center justify-content-center">
-  
-            <div class="col d-flex flex-column justify-content-evenly mb-3 mb-md-0">
-              <!-- Name input -->
-              <div class="form-outline mt-0 only-contact">
-                <input type="text" id="name" name="name" class="form-control">
-                <label class="form-label ml-0" for="name">Nombre</label>
-                <div class="form-notch">
-                  <div class="form-notch-leading" style="width: 9px;"></div>
-                  <div class="form-notch-middle" style="width: 42.4px;"></div>
-                  <div class="form-notch-trailing"></div>
+                <!-- Nombre input -->
+                <div class="form-outline mt-0 only-contact">
+                  <input type="text" id="name" name="name" class="form-control">
+                  <label class="form-label ml-0" for="name">Nombre</label>
+                  <div class="form-notch">
+                    <div class="form-notch-leading" style="width: 9px;"></div>
+                    <div class="form-notch-middle" style="width: 42.4px;"></div>
+                    <div class="form-notch-trailing"></div>
+                  </div>
+                </div>
+    
+                <!-- Email input -->
+                <div class="form-outline mt-3">
+                  <input type="email" id="email" name="email" class="form-control">
+                  <label class="form-label ml-0" for="email">Correo Electronico</label>
+                  <div class="form-notch">
+                    <div class="form-notch-leading" style="width: 9px;"></div>
+                    <div class="form-notch-middle" style="width: 88.8px;"></div>
+                    <div class="form-notch-trailing"></div>
+                  </div>
+                </div>
+    
+                <!-- motivo input -->
+                <div class="form-outline mt-3">
+                  <input type="text" id="subject" name="subject" class="form-control">
+                  <label class="form-label ml-0" for="subject">Motivos</label>
+                  <div class="form-notch">
+                    <div class="form-notch-leading" style="width: 9px;"></div>
+                    <div class="form-notch-middle" style="width: 50.4px;"></div>
+                    <div class="form-notch-trailing"></div>
+                  </div>
                 </div>
               </div>
+              <div class="col d-flex flex-column justify-content-evenly">
   
-              <!-- Email input -->
-              <div class="form-outline mt-3">
-                <input type="email" id="email" name="email" class="form-control">
-                <label class="form-label ml-0" for="email">Correo Electronico</label>
-                <div class="form-notch">
-                  <div class="form-notch-leading" style="width: 9px;"></div>
-                  <div class="form-notch-middle" style="width: 88.8px;"></div>
-                  <div class="form-notch-trailing"></div>
+                <!-- Mensaje input -->
+                <div class="form-outline">
+                  <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                  <label class="form-label ml-0" for="message">Mensaje</label>
+                  <div class="form-notch">
+                    <div class="form-notch-leading" style="width: 9px;"></div>
+                    <div class="form-notch-middle" style="width: 60px;"></div>
+                    <div class="form-notch-trailing"></div>
+                  </div>
                 </div>
-              </div>
-  
-              <!-- Subject input -->
-              <div class="form-outline mt-3">
-                <input type="text" id="subject" name="subject" class="form-control">
-                <label class="form-label ml-0" for="subject">Motivos</label>
-                <div class="form-notch">
-                  <div class="form-notch-leading" style="width: 9px;"></div>
-                  <div class="form-notch-middle" style="width: 50.4px;"></div>
-                  <div class="form-notch-trailing"></div>
-                </div>
+
+                <!-- buton enviar -->
+                <button class="btn btn-primary btn-block mt-2 only-send">Enviar</button>
               </div>
             </div>
+          </form>
+        </div>
+      </section>
 
-            <div class="col d-flex flex-column justify-content-evenly">
-              <!-- Message input -->
-              <div class="form-outline">
-                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                <label class="form-label ml-0" for="message">Mensaje</label>
-                <div class="form-notch">
-                  <div class="form-notch-leading" style="width: 9px;"></div>
-                  <div class="form-notch-middle" style="width: 60px;"></div>
-                  <div class="form-notch-trailing"></div>
-                </div>
-              </div>
-              <!-- Submit button -->
-              <button class="btn btn-primary btn-block mt-2 only-send">Enviar</button>
-            </div>
-          </div>
-        </form>
+      <!-- imagen tipo parallax (gif de kirby) -->
+      <div class="container-fluid parallax bg-image bg-image-0">
+        <div class="mask"></div>
       </div>
     </section>
-    <!-- <div class="container-fluid parallax bg-image bg-image-2"></div> -->
-    <div class="container-fluid parallax bg-image bg-image-0">
-      <div class="mask"></div>
-    </div>
 
-  
+    <!-- SECCION FOOTER PARA TODAS LAS PANTALLAS -->
     <footer class="bg-dark text-white">
       <!-- Grid container -->
       <div class="container p-4 pb-0">
-        <!-- Section: Social media -->
+        <!-- Section: Redes sociales -->
         <div class="mb-4">
           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
@@ -257,7 +258,7 @@
           <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
         </div>
       </div>
-  
+
       <!-- Copyright -->
       <div class="copy p-3">© 2020 Copyright: <a class="text-white" href="#">aresSoft.com</a></div>
     </footer>
