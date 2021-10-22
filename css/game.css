@@ -18,13 +18,8 @@ body {
 	padding: 0;
 }
 
-body {
-	background: #959595;
-	font-family: 'Permanent Marker', cursive;
-	font-size: 16px;
-}
 
-.container {
+.containerGame {
 	display: flex;
 	justify-content: center;
 	align-items: center;

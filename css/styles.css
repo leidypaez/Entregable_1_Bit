@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-body {
-  background: #999;
-}
-.header {
-  background: #1F1F1F;
-}
 nav ul {
   display: flex;
    justify-content: space-around;

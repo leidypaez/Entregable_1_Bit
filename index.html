@@ -17,16 +17,17 @@
     <link rel="stylesheet" href="css/animate.css" />
 
     <!-- css -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
     <link rel="stylesheet" href="css/gallery.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/game.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
     <title>ARESoft</title>
   </head>
 
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-bluedark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand">ULTIMATE GAME</a>
+        <a class="navbar-brand m-0 p-0">ULTIMATE GAME</a>
 
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
@@ -66,69 +67,39 @@
     
     <!-- Carousel -->
     <header>
-      <section class="prueba">
-        <!-- Carousel wrapper -->
-        <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-          <!-- Indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-mdb-interval="1500">
+            <img
+              src="img/halo-5.jpg"
+              class="d-block w-100 h-100"
+              alt="..."
+            />
           </div>
-  
-          <!-- Inner -->
-          <div class="carousel-inner">
-            <!-- Single item -->
-            <div class="carousel-item active">
-              <img src="img/halo-5.jpg" class="d-block w-100" alt="..."/>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Halo 5</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </div>
-            </div>
-  
-            <!-- Single item -->
-            <div class="carousel-item">
-              <img src="img/crash_bandicoot.jpg" class="d-block w-100" alt="..."/>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Crash Bandicoot</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-  
-            <!-- Single item -->
-            <div class="carousel-item">
-              <img src="img/mario kart.jpg" class="d-block w-100" alt="..."/>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Mario Kart</h5>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                </p>
-              </div>
-            </div>
+          <div class="carousel-item" data-mdb-interval="1500">
+            <img
+              src="img/crash_bandicoot.jpg"
+              class="d-block w-100 h-100"
+              alt="..."
+            />
           </div>
-          <!-- Inner -->
-  
-          <!-- Controls -->
-          <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item" data-mdb-interval="1500">
+            <img
+              src="img/mario kart.jpg"
+              class="d-block w-100 h-100"
+              alt="..."
+            />
+          </div>
         </div>
-        <!-- Carousel wrapper -->
-      </section>
+      </div>
     </header>
-
+   
     <!-- Datos curiosos -->
     <section class="py-5">
       <div class="container-fluid g-0">
         
-        <div class="row">
-          <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center">Datos curiosos</h2>
+        <div class="row m-0 p-0 w-100">
+          <h2 class="text-uppercase fw-bold fs-2 text mb-4 text-center p-0">Datos curiosos</h2>
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 g-0">
@@ -234,6 +205,136 @@
         <div class="modal-content p-0"></div>
       </div>
     </div>
+
+    <!-- Game -->
+    <section class="py-5">
+      <div class="containerGame">
+
+        <br>
+        <header>
+            <h1>JUEGO DE MEMORIA</h1>
+        </header>
+
+        <!-- Inicio de Instrucciones -->
+        <div id="header">
+			<ul class="nav">
+				<li><a href="">Como jugar</a>
+					<ul>
+						<li><a href="">Empareja cartas en menor tiempo posible y con menos movimientos.</a></li>
+						</li>
+					</ul>
+				</li>
+
+				<li><a href="">Regla 1</a>
+					<ul>
+						<li><a href="">Haz click en las tarjetas.</a></li>
+					</ul>
+				</li>
+
+				<li><a href="">Regla 2</a>
+                    <ul>
+                        <li><a href="">Al revelarlas, recuerda la posicion de cada una.</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Regla 3</a>
+                    <ul>
+						<li><a href="">Retate a lograr combinarlas en el menor tiempo posible.</a></li>
+					</ul>
+                </li>
+			</ul>
+		</div>
+        <!-- Fin de Instrucciones -->   
+        <br>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Move(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card match" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" type="bolt" >
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card match" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card open show" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>🎉Felicitaciones 🎉</h2>
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    🎉Felicitaciones has ganado!🎉
+                </div>
+                <div class="content-2">
+                    <p>Hiciste <span id=finalMove> </span> movimientos </p>
+                    <p>en <span id=totalTime> </span> </p>
+                    <p>Ranking:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Play again 😄</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    </section>
 
     <!-- Contact -->
     <section id="contact" class="py-5">
@@ -374,5 +475,7 @@
     <!-- Scripts -->
     <script src="./js/script.js"></script>
     <script src="./js/gallery.js"></script>
+    <script src="./js/game.js"></script>
+
   </body>
 </html>
